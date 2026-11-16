@@ -1,0 +1,324 @@
+/* Configurações Globais (Reset) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: '-apple-system', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "夹 communication", sans-serif;
+}
+
+/* Fundo Geral da Página */
+body {
+    background-color: #f7f7f7; /* Cinza bem claro característico */
+    color: #111111; /* Texto quase preto padrão */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container do Formulário (<center>) */
+center {
+    background-color: #FFFFFF; /* Fundo branco limpo */
+    padding: 40px 35px;
+    border-radius: 32px; /* Cantos super arredondados estilo Pinterest */
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+/* Título Principal */
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #111111;
+    letter-spacing: -1px;
+}
+
+/* Subtítulo simulando o slogan deles */
+center::after {
+    content: "Encontre novas ideias para experimentar";
+    display: block;
+    font-size: 16px;
+    color: #5f5f5f;
+    margin-bottom: 30px;
+}
+
+/* Formulário e Alinhamento */
+form {
+    width: 100%;
+    text-align: left; /* Alinha os textos explicativos à esquerda */
+}
+
+/* Textos de Identificação (Labels) */
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 6px;
+    color: #212121;
+    padding-left: 8px; /* Alinha com o início do texto do input */
+}
+
+/* Campos de Entrada (Inputs) */
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #FFFFFF;
+    border: 2px solid #cdcdcd; /* Borda cinza suave */
+    border-radius: 16px; /* Inputs também arredondados */
+    color: #111111;
+    font-size: 16px;
+    transition: border-color 0.2s;
+    outline: none;
+}
+
+/* Efeito ao clicar no Input */
+input:focus {
+    border-color: #0076d3; /* Foco azul discreto igual ao do Pinterest */
+}
+
+/* Botão de Ação Principal (Vermelho Pinterest) */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #E60023; /* Vermelho Oficial Pinterest */
+    border: none;
+    border-radius: 24px; /* Formato pílula suave */
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    margin-top: 15px;
+}
+
+/* Efeitos no Botão (Hover e Click) */
+button:hover {
+    background-color: #b6001a; /* Vermelho um pouco mais escuro */
+}
+
+button:active {
+    transform: scale(0.97); /* Efeito físico de clique */
+}
+
+/* Links de Navegação (Abaixo do Formulário) */
+a {
+    display: inline-block;
+    color: #5f5f5f;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 25px;
+    transition: text-decoration 0.2s, color 0.2s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #111111;
+}
+
+/* Oculta ou diminui quebras de linha desnecessárias para manter o design limpo */
+br {
+    display: block;
+    margin-bottom: 8px;
+    content: "";
+}
+
+        /* Estilo Minimalista Pinterest */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: '-apple-system', BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #f7f7f7; /* Cinza bem claro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card-boas-vindas {
+            background-color: #ffffff;
+            padding: 50px 40px;
+            border-radius: 32px; /* Cantos arredondados estilo Pinterest */
+            text-align: center;
+            max-width: 450px;
+            width: 100%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #111111;
+            margin-bottom: 12px;
+            letter-spacing: -1px;
+        }
+
+        h1 span {
+            color: #E60023; /* Vermelho Oficial Pinterest */
+        }
+
+        p {
+            font-size: 16px;
+            color: #5f5f5f;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .btn-sair {
+            display: inline-block;
+            background-color: #e9e9e9;
+            color: #111111;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 24px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: background-color 0.2s;
+        }
+
+        .btn-sair:hover {
+            background-color: #dcdcdc;
+        }
+
+        /* Container que envolve a tabela para dar cantos arredondados e rolagem lateral se a tela for pequena */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    background-color: #ffffff;
+    border-radius: 16px; /* Cantos arredondados nos padrões do Pinterest */
+    border: 1px solid #e9e9e9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    margin-top: 20px;
+}
+
+/* Estilização Geral da Tabela */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+/* Cabeçalho da Tabela */
+thead tr {
+    background-color: #e9e9e9; /* Fundo cinza claro para destacar as letras pretas */
+}
+
+th {
+    padding: 14px 18px;
+    font-size: 14px;
+    font-weight: 700; /* Letras mais grossas para destacar */
+    text-align: left;
+    letter-spacing: -0.2px;
+    color: #111111; /* ATUALIZADO: Letras do cabeçalho de preto */
+}
+
+/* Força os cantos arredondados apenas nas pontas do cabeçalho */
+thead tr th:first-child {
+    border-top-left-radius: 16px;
+}
+thead tr th:last-child {
+    border-top-right-radius: 16px;
+}
+
+/* Linhas e Células de Dados */
+tbody tr {
+    background-color: #ffffff;
+    transition: background-color 0.2s ease;
+}
+
+/* Efeito Zebrado Suave (linhas alternadas com cinza bem claro) */
+tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/* Efeito de passar o mouse na linha */
+tbody tr:hover {
+    background-color: #f0f0f0; /* Destaca a linha inteira */
+    cursor: pointer;
+}
+
+td {
+    padding: 14px 18px;
+    font-size: 14px;
+    color: #111111; /* ATUALIZADO: Letras do corpo de preto absoluto */
+    border-bottom: 1px solid #e9e9e9;
+    white-space: nowrap; /* Evita que o texto quebre linhas dentro da célula */
+}
+
+/* Remove a borda de baixo da última linha para não quebrar o visual */
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Estilo para destacar o ID */
+tbody tr td:first-child {
+    font-weight: 700;
+    color: #111111;
+}
+
+
+/* Configuração geral da tabela para não amassar os dados */
+.tabela-cadastrados {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaços duplos entre as bordas */
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Estilo dos cabeçalhos e das células */
+.tabela-cadastrados th, 
+.tabela-cadastrados td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle; /* Alinha o texto verticalmente ao centro */
+}
+
+/* Cor de fundo para o cabeçalho parecer um painel administrativo */
+.tabela-cadastrados th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Efeito zebrado: deixa uma linha branca e outra cinza claro (opcional, mas ajuda a ler) */
+.tabela-cadastrados tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* O SEGREDO DOS BOTÕES: Alinha os botões lado a lado usando Flexbox */
+.acoes-botoes {
+    display: flex;
+    gap: 8px; /* Espaçamento de 8px entre o botão atualizar e o deletar */
+}
+
+/* Estilo rápido para os botões ficarem bonitos na linha */
+.btn-editar, .btn-deletar {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.btn-editar {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-deletar {
+    background-color: #dc3545;
+    color: white;
+}
+

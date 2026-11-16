@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET</title>
+
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: '-apple-system', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "夹 communication", sans-serif;
+}
+        .table-container {
+    width: 100%;
+    overflow-x: auto;
+    background-color: #ffffff;
+    border-radius: 16px; /* Cantos arredondados nos padrões do Pinterest */
+    border: 1px solid #e9e9e9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+thead tr {
+    background-color: #e9e9e9; /* Fundo cinza claro para destacar as letras pretas */
+}
+
+th {
+    padding: 14px 18px;
+    font-size: 14px;
+    font-weight: 700; /* Letras mais grossas para destacar */
+    text-align: left;
+    letter-spacing: -0.2px;
+    color: #111111; /* ATUALIZADO: Letras do cabeçalho de preto */
+}
+
+/* Força os cantos arredondados apenas nas pontas do cabeçalho */
+thead tr th:first-child {
+    border-top-left-radius: 16px;
+}
+thead tr th:last-child {
+    border-top-right-radius: 16px;
+}
+
+/* Linhas e Células de Dados */
+tbody tr {
+    background-color: #ffffff;
+    transition: background-color 0.2s ease;
+}
+
+/* Efeito Zebrado Suave (linhas alternadas com cinza bem claro) */
+tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/* Efeito de passar o mouse na linha */
+tbody tr:hover {
+    background-color: #f0f0f0; /* Destaca a linha inteira */
+    cursor: pointer;
+}
+
+td {
+    padding: 14px 18px;
+    font-size: 14px;
+    color: #111111; /* ATUALIZADO: Letras do corpo de preto absoluto */
+    border-bottom: 1px solid #e9e9e9;
+    white-space: nowrap; /* Evita que o texto quebre linhas dentro da célula */
+}
+
+/* Remove a borda de baixo da última linha para não quebrar o visual */
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Estilo para destacar o ID */
+tbody tr td:first-child {
+    font-weight: 700;
+    color: #111111;
+}
+
+
+/* Configuração geral da tabela para não amassar os dados */
+.tabela-cadastrados {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaços duplos entre as bordas */
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Estilo dos cabeçalhos e das células */
+.tabela-cadastrados th, 
+.tabela-cadastrados td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle; /* Alinha o texto verticalmente ao centro */
+}
+
+/* Cor de fundo para o cabeçalho parecer um painel administrativo */
+.tabela-cadastrados th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Efeito zebrado: deixa uma linha branca e outra cinza claro (opcional, mas ajuda a ler) */
+.tabela-cadastrados tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+    </style>
+    
+</head>
+<body>
+    <center>
+    <h1>Cadastrados</h1>
+    <table>
+         <a href="get.html">Pessoas cadastradas |</a>
+        <a href="put.html">Atualizações |</a>
+        <a href="delete.html">Deletar Cadastros</a>
+        <a href="adm.html">Página inicial</a>
+        <thead>
+            <tr>
+                <td>Id:</td>
+                <td>Nome:</td>
+                <td>Sobrenome:</td>
+                <td>CPF:</td>
+                <td>Email:</td>
+                <td>Senha:</td>
+                <td>Rua:</td>
+                <td>CEP:</td>
+                <td>Cidade:</td>
+                <td>Estado:</td>
+                <td>Telefone:</td>
+            </tr>
+        </thead>
+        <tbody id="tabela-corpo"></tbody>
+    </table>
+    <script src="get.js"></script>
+</body>
+</html>

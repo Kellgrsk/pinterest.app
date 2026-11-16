@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Cadastros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+
+        <a href="get.html">Pessoas cadastradas |</a>
+        <a href="put.html">Atualizações |</a>
+        <a href="delete.html">Deletar Cadastros</a>
+        <a href="adm.html">Página inicial</a>
+        <h1>Atualizar Cadastro (PUT)</h1>
+
+      
+        <label for="identificadorCPF">Digite o CPF para buscar:</label>
+        <input type="text" id="identificadorCPF">
+        <button onclick="buscarDados()">Buscar</button>
+        <br><br>
+
+        <input type="hidden" id="identificador">
+
+        <hr>
+        <h3>Dados do Cadastro</h3>
+
+        <label for="nomeAtualizar">Nome:</label>
+        <input type="text" id="nomeAtualizar">
+        <br><br>
+
+        <label for="sobrenomeAtualizar">Sobrenome:</label>
+        <input type="text" id="sobrenomeAtualizar">
+        <br><br>
+
+        <label for="emailAtualizar">Email:</label>
+        <input type="text" id="emailAtualizar">
+        <br><br>
+
+        <label for="senhaAtualizar">Senha:</label>
+        <input type="password" id="senhaAtualizar">
+        <br><br>
+
+        <label for="ruaAtualizar">Rua:</label>
+        <input type="text" id="ruaAtualizar">
+        <br><br>
+
+        <label for="cepAtualizar">CEP:</label>
+        <input type="text" id="cepAtualizar">
+        <br><br>
+
+        <label for="cidadeAtualizar">Cidade:</label>
+        <input type="text" id="cidadeAtualizar">
+        <br><br>
+
+        <label for="estadoAtualizar">Estado:</label>
+        <input type="text" id="estadoAtualizar">
+        <br><br>
+
+        <label for="telefoneAtualizar">Telefone:</label>
+        <input type="text" id="telefoneAtualizar">
+        <br><br>
+
+        <button onclick="atualizarDados()">Atualizar Dados</button>
+    </center>
+
+
+</body>
+</html>

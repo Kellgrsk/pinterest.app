@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Pinterest App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1>Bem vindo á Página de Administrador</h1>
+        <p>Você entrou no modo Administrador. Gerencie, visualize e atualize as pessoas cadastradas na base de dados de forma simples e intuitiva.</p>
+        
+
+       <div id="etapaEmail">
+
+        <label for="emailAdmin">Email</label>
+        
+        <input type="email" id="emailAdmin" placeholder="Digite o e-mail do ADM">       
+</div>
+
+       <div id="etapaSenha" style="display: none;">
+       <input type="password" id="senhaAdmin" placeholder="Digite a senha">
+           <button onclick="verificarSenha()">Entrar</button>
+      <p id="erroSenha" style="color: red; display: none;">erro</p>
+</div>
+        <button onclick="verificarAcesso()" class="botao">Entrar</button>   
+        <br><br>
+
+         <a href="login.html">Voltar para a página de Login</a>
+    </center>
+
+    <script src="adm.js"></script>
+</body>
+</html>
